@@ -1,4 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,22 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Word-Guessing-Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="assets/css/style.css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
 
 <body>
+
     <img src="https://i.etsystatic.com/6969413/r/il/036e3f/1098678372/il_570xN.1098678372_30pv.jpg" height=400px; width=300px;>
 
     <p>
         <h1> Choose Wisely, fool. </h1>
     </p>
-    <p> <span onclick="replaceword('Emotions');">
-            <h2> Hint: NONE.</h2>
-        </span></p>
+    <h2>Hint:</h2>
+    <h3><p id="demo">NONE.</p>
 
+    <script>
+    document.getElementById("demo").addEventListener("click", myFunction);
+    
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "EMOTION/REALIZATION";
+    }
+    </script> 
+    </h3>
 
+    <header> </header>
 
-        <script src="assets/javascript/game.js" type= "text/JavaScript" ></script>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 top-label">
+                <br>
+                <h1>Press any key to get started!</h1>
+                <hr>
+    
+                <ul>
+                    <li>
+                        Total Wins:
+                        <h3><span id="wins"></span></h3>
+                    </li>
+    
+                    <li>
+                        # of Guesses Remaining:
+                        <h3><span id="guesses-left"></span></h3>
+                    </li>
+                    <li>
+                        Letters Already Guessed:
+                        <h3><span id="letters-guessed"></span></h3>
+                    </li>
+                    <li>
+                        Current Word:
+                        <br />
+                        <h3><span id="word-guess"></span></h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script type="text/javascript">
+        
+    </script>
+
+    <script src="assets/javascript/game.js" type="text/JavaScript"></script>
 </body>
 
 </html>
